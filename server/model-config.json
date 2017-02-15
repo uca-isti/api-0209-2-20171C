@@ -35,5 +35,9 @@
   "Categoria": {
     "dataSource": "db",
     "public": true
+  },
+  "Multa": {
+    "dataSource": "db",
+    "public": true
   }
 }
