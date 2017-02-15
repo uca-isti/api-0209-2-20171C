@@ -31,5 +31,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Categoria": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Multa": {
+    "dataSource": "db",
+    "public": true
   }
 }
