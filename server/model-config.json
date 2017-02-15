@@ -39,5 +39,9 @@
   "Multa": {
     "dataSource": "db",
     "public": true
+  },
+  "Articulo": {
+    "dataSource": "db",
+    "public": true
   }
 }
