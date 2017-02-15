@@ -21,7 +21,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "multa": {
+      "type": "belongsTo",
+      "model": "Multa",
+      "foreignKey": "multa_id"
+    }
+  },
   "acls": [],
   "methods": {}
 }
