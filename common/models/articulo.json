@@ -1,0 +1,33 @@
+{
+  "name": "Articulo",
+  "plural": "Articulos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Numero": {
+      "type": "number",
+      "required": true
+    },
+    "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Descripcion": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "multa": {
+      "type": "belongsTo",
+      "model": "Multa",
+      "foreignKey": "multa_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
