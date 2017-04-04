@@ -5,7 +5,8 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint && nsp check"
+    "posttest": "npm run lint && nsp check",
+    "migrate": "./node_modules/grunt-cli/bin/grunt"
   },
   "dependencies": {
     "compression": "^1.0.3",
