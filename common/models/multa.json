@@ -39,24 +39,35 @@
   },
   "acls": [
     {
-  "accessType": "*",
-  "principalType": "ROLE",
-  "principalId": "$everyone",
-  "permission": "DENY"
-},
-{
-  "accessType": "READ",
-  "principalType": "ROLE",
-  "principalId": "$owner",
-  "permission": "ALLOW",
-  "property": "create"
-},
-{
-  "accessType": "READ",
-  "principalType": "ROLE",
-  "principalId": "$authenticated",
-  "permission": "ALLOW",
-  "property": "create"
+    "accessType": "READ",
+    "principalType": "ROLE",
+    "principalId": "$everyone",
+    "permission": "ALLOW",
+    "property": "READ"
+    },{
+    "accessType": "READ",
+    "principalType": "ROLE",
+    "principalId": "$owner",
+    "permission": "ALLOW",
+    "property": "create"
+    },{
+      "accessType": "write",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "create"
+      },{
+        "accessType": "*",
+        "principalType": "ROLE",
+        "principalId": "admin",
+        "permission": "ALLOW",
+        "property": "*"
+      },{
+        "accessType": "delete",
+        "principalType": "everyone",
+        "principalId": "$everyone",
+        "permission": "DENY",
+        "property": "delete"
 }
   ],
   "methods": {}
